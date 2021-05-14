@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html{
+                font-size: 62.5%;
+            }
+            .div-center{
+                width: 100vw;
+                height: 100vh;
+                background-color: hsl(260, 21%, 94%);
+                display: grid;
+                place-content: center;
+            }
+            .logo
+            {
+                width: 15rem;
+                height: 15rem;
+                background-color: #f05030;
+                border-radius: 1.5rem;
+                position: relative;
+               transform: rotate(46.5deg); 
+
+            }
+            .line1{
+                width: 11rem;
+                height: 1.2rem;
+                background-color: #fff;
+                position: absolute;
+                top:3rem;
+            }
+            .line1::before{
+                content: "";
+                width: 3rem;
+                height: 3rem;
+                background-color:#ffff;
+                position: absolute;
+                border-radius: 50%;
+                left:3rem;
+                top: -1rem; 
+
+            }
+            .line1::after{
+                content: "";
+                width: 3rem;
+                height: 3rem;
+                background-color:#fff;
+                position: absolute;
+                border-radius: 50%;
+             right:-1rem;
+                top: -1rem; 
+                
+
+            }
+
+            .line2{
+                width: 11rem;
+                height: 1.2rem;
+                background-color: #fff;
+                position: absolute;
+                top:6.2rem;
+                left: 2rem;
+                 transform: rotate(46.6deg); 
+            }
+            .line2::after{
+                content: "";
+                width: 3rem;
+                height: 3rem;
+                background-color:#fff;
+                position: absolute;
+                border-radius: 50%;
+                right:-1rem;
+                top: -1rem;
+
+            } 
+
+
+        </style>
+    </head>
+<div class="div-center">
+    <div class="logo">
+        <div class="line1">
+
+        </div>
+        <div class="line2">
+
+        </div>
+    </div>
+</div>
+</html>
