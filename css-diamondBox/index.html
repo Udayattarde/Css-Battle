@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=<div>>">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: grid;
+            height: 500px;
+           place-items: center;
+           background-color: #082429;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #F3ac3c;
+            transform: rotate(45deg);
+            position: relative;
+           
+        }
+        div::before
+        {
+            content: "";
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            background-color:#1A4341;
+            top: -50px;
+            left: -25px;
+            transform: skew(45deg);
+        }
+
+        div::after
+        {
+            content: "";
+            width: 50px;
+            height: 100px;
+            position: absolute;
+            background-color:#998235;
+            top: -25px;
+            right: 100px;
+            transform: skewY(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
